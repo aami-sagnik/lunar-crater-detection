@@ -1,0 +1,7 @@
+__pycache__/
+.cache
+.venv
+saved_weights
+best_weights
+dataset
+
