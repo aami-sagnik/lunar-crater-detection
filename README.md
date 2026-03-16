@@ -1,2 +1,5 @@
 # Lunar Crater Detection
-This project aims to detect craters on the lunar surface using [FPSNet](https://arxiv.org/abs/1910.03892) (with RetinaNet's backbone and detection head). We implemented FPSNet in PyTorch and trained it on a dataset that we curated from ISRO's OHRC dataset. Additionally, we trained the RetineNet backbone using another dataset from [Roboflow by TitaniumSV5](https://universe.roboflow.com/titaniumsv5/chandrayaan-2-ohrc-lunar-crater-dataset) for increased precision. `lunar_crater.ipynb` contains the code for FPSNet and its training. `retina_net.ipynb` contains the code for training the RetinaNet backbone. `lunar-crater-mapping-tool` contains the tool we used to draw masks around the craters to create our dataset.
+This project aims to detect craters on the lunar surface using RetinaNet, Faster RCNN and convolutional block attention module (CBAM). We implemented both Faster RCNN and RetinaNet with CBAM on the FPN outputs in PyTorch and trained them on an annotated dataset that we curated from ISRO's OHRC dataset.
+
+Here are the results we obtained:
+![Lunar crater detection results](results.png)
